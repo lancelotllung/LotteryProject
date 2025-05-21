@@ -13,7 +13,7 @@ This project is a decentralized lottery application built using an Ethereum smar
 - The contract is deployed on the Goerli testnet. (Make sure to update this if you use a different testnet.)
 
 ## Live Demonstration
-- The front-end is hosted on GitHub Pages at: [https://yourusername.github.io/yourproject](https://yourusername.github.io/yourproject)
+- The front-end is hosted on GitHub Pages at: [https://lancelotllung.github.io/LotteryProject/](https://lancelotllung.github.io/LotteryProject/)
 
 ## Setup Instructions
 1. **Deploy the Contract:**
