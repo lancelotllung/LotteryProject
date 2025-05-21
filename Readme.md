@@ -1,5 +1,8 @@
 # Decentralized Lottery DApp
 
+- **Live Demo**: The front-end is hosted via GitHub Pages. Access the live demo here:  
+  [https://lancelotllung.github.io/LotteryProject/](https://lancelotllung.github.io/LotteryProject/)
+  
 ## Overview
 This project is a **fully decentralized** lottery application built using an Ethereum smart contract and a web-based front-end. Users participate by sending **exactly 0.01 ETH** to the lottery. Once at least **one players** have joined, **anyone** can pick a random winner, transferring the contract balance to the winner. The contract also allows **any user** to restart the lottery after it ends.
 
@@ -12,8 +15,6 @@ All files are located in the root folder of this repository:
 
 ## Deployment Details
 - **Ethereum Testnet**: The contract is deployed on the **Sepolia** testnet. *(Update if using a different testnet.)*
-- **Live Demo**: The front-end is hosted via GitHub Pages. Access the live demo here:  
-  [https://lancelotllung.github.io/LotteryProject/](https://lancelotllung.github.io/LotteryProject/)
 
 ## Setup Instructions
 
