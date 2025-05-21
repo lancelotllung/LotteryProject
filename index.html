@@ -69,9 +69,9 @@
   
   <hr>
   
-  <!-- Manager Functions -->
-  <div id="managerFunctions">
-    <h2>Manager Functions</h2>
+  <!-- Lottery Controls -->
+  <div id="lotteryControls">
+    <h2>Lottery Controls</h2>
     <button onclick="pickWinner()">Pick Winner</button>
     <button onclick="restartLottery()">Restart Lottery</button>
   </div>
@@ -83,8 +83,8 @@
     let web3;
     let lotteryContract;
 
-    // Replace with the actual address after deployment
-    const lotteryAddress = "0x3f7f2f5f2C49084a0C73715a9Cb9B45f88d700E1";
+    // Contract address after deployment
+    const lotteryAddress = "0x2AAdfa40077198022ACcd0f3b390bfA37bA671Ae";
 
     // Contract ABI generated after compiling Lottery.sol
     const lotteryABI = [
@@ -118,19 +118,6 @@
           "name": "pickWinner",
           "outputs": [],
           "stateMutability": "nonpayable",
-          "type": "function"
-      },
-      {
-          "inputs": [],
-          "name": "manager",
-          "outputs": [
-              {
-                  "internalType": "address",
-                  "name": "",
-                  "type": "address"
-              }
-          ],
-          "stateMutability": "view",
           "type": "function"
       },
       {
@@ -213,7 +200,7 @@
       }
     }
 
-    // Call the contract's pickWinner function (manager only)
+    // Call the contract's pickWinner function (anyone can call)
     async function pickWinner() {
       try {
         const accounts = await web3.eth.getAccounts();
@@ -226,7 +213,7 @@
       }
     }
 
-    // Restart the lottery (manager only)
+    // Restart the lottery (anyone can call)
     async function restartLottery() {
       try {
         const accounts = await web3.eth.getAccounts();
